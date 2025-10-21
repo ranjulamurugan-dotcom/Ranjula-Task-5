@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ranjula M — Portfolio</title>
+  <meta name="description" content="Portfolio & Resume — Ranjula M, Electronics & Communication Engineering student" />
+  <style>
+    :root{
+      --bg:#0f1724; --card:#0b1220; --muted:#9aa4b2; --accent:#6ee7b7; --glass: rgba(255,255,255,0.04);
+      --maxw:1000px;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,Segoe UI,Roboto,Arial,sans-serif;background:linear-gradient(180deg,#071126 0%, #071631 100%);color:#e6eef8;line-height:1.5}
+    .wrap{max-width:var(--maxw);margin:28px auto;padding:24px}
+
+    header{display:flex;gap:20px;align-items:center}
+    .avatar{width:112px;height:112px;border-radius:16px;background:linear-gradient(135deg,var(--accent),#60a5fa);display:flex;align-items:center;justify-content:center;font-weight:700;color:#052;box-shadow:0 8px 24px rgba(2,6,23,0.6)}
+    h1{margin:0;font-size:28px}
+    .sub{color:var(--muted);margin-top:6px}
+
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:24px;margin-top:20px}
+
+    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 20px rgba(2,6,23,0.6)}
+    .muted{color:var(--muted)}
+
+    nav a{display:inline-block;margin-right:12px;color:var(--muted);text-decoration:none}
+    .actions{margin-top:12px}
+    .btn{display:inline-block;padding:8px 12px;border-radius:10px;text-decoration:none;font-weight:600}
+    .btn-primary{background:var(--accent);color:#042;}
+    .btn-ghost{border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
+
+    h2{margin:0 0 10px 0}
+    .education, .skills-list, .project-list{display:flex;flex-direction:column;gap:10px}
+
+    .skill-pill{display:inline-block;padding:6px 10px;border-radius:999px;background:var(--glass);color:var(--muted);font-weight:600;margin:4px 6px 4px 0}
+
+    .contact dt{font-weight:700}
+    .contact dd{margin:0 0 8px 0;color:var(--muted)}
+
+    footer{margin-top:26px;color:var(--muted);font-size:13px;text-align:center}
+
+    /* Responsive */
+    @media (max-width:880px){
+      .grid{grid-template-columns:1fr;}
+      .avatar{width:92px;height:92px}
+    }
+
+    /* printable resume quick style */
+    @media print{body{background:white;color:black} .card{background:white}}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="avatar">RM</div>
+      <div>
+        <h1>Ranjula M</h1>
+        <div class="sub">B.E. Electronics & Communication Engineering (2022 - 2026) — Aspiring Embedded & Web Developer</div>
+        <div class="actions">
+          <a class="btn btn-primary" href="mailto:ranjulamurugan@gmail.com">Email</a>
+          <a class="btn btn-ghost" href="#download">Download Resume</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="grid">
+      <main>
+        <section class="card">
+          <h2>Career Objective</h2>
+          <p class="muted">To obtain a challenging role in electronics and communication engineering that will allow me to apply my academic knowledge, problem-solving abilities, and project management skills, while contributing to the organization's success in technology-driven projects.</p>
+        </section>
+
+        <section class="card" style="margin-top:16px">
+          <h2>Education</h2>
+          <div class="education">
+            <div>
+              <strong>B.E - Electronics & Communication Engineering</strong><br>
+              AKT Memorial College of Engineering And Technology, Kallakurichi — CGPA: 8.31 (2022 - 2026)
+            </div>
+            <div>
+              <strong>12th</strong><br>
+              Government Girls Hr Sec School, Murarbadhu — 65.7% (2022)
+            </div>
+            <div>
+              <strong>10th</strong><br>
+              Government Hr Sec School, Murarbadhu — 66.8% (2019)
+            </div>
+          </div>
+        </section>
+
+        <section class="card" style="margin-top:16px">
+          <h2>Projects</h2>
+          <ul class="project-list muted">
+            <li>Comprehensive Smoke Detection System for Gas Processing Facilities</li>
+            <li>Arduino Based LPG Leakage Detector with SMS Indication Using GSM Modem</li>
+          </ul>
+        </section>
+
+        <section class="card" style="margin-top:16px">
+          <h2>Internship & Workshop</h2>
+          <ul class="project-list muted">
+            <li>Internship in Web Development using HTML, CSS and JavaScript at ApexPlanet</li>
+            <li>Attended Workshop on “PLC” (Programming Logic Circuits) at Technoheal, Chennai</li>
+          </ul>
+        </section>
+
+        <section class="card" style="margin-top:16px">
+          <h2>Technical Skills</h2>
+          <p class="skills-list">
+            <span class="skill-pill">Python (Basics)</span>
+            <span class="skill-pill">MS Office</span>
+            <span class="skill-pill">MATLAB</span>
+          </p>
+        </section>
+
+        <section class="card" style="margin-top:16px">
+          <h2>Soft Skills</h2>
+          <p class="muted">Communication — Self-motivated — Problem solving — Teamwork — Time management — Adaptability</p>
+        </section>
+
+        <section class="card" style="margin-top:16px">
+          <h2>Area of Interest</h2>
+          <p class="muted">Embedded Systems & IoT — Digital Circuits — Web Development — Electronic Devices and Circuits</p>
+        </section>
+      </main>
+
+      <aside>
+        <div class="card contact">
+          <h2>Contact</h2>
+          <dl>
+            <dt>Name</dt>
+            <dd>Ranjula M</dd>
+            <dt>Phone</dt>
+            <dd><a href="tel:+919363507049" style="color:inherit;text-decoration:none">+91 93635 07049</a></dd>
+            <dt>Email</dt>
+            <dd><a href="mailto:ranjulamurugan@gmail.com" style="color:inherit;text-decoration:none">ranjulamurugan@gmail.com</a></dd>
+            <dt>Address</dt>
+            <dd class="muted">172/112, West Street, Thirukanangur Village, Alathur (PO), Sankarapuram (TK), Kallakurichi (Dist) - 606208</dd>
+          </dl>
+        </div>
+
+        <div class="card" style="margin-top:16px">
+          <h2>Achievements & Activities</h2>
+          <ul class="muted">
+            <li>NSS Volunteer</li>
+          </ul>
+        </div>
+
+        <div class="card" style="margin-top:16px">
+          <h2>Personal</h2>
+          <p class="muted">Father's Name: Murugan<br>Gender: Female<br>Date of Birth: 06 May 2005<br>Languages: English, Tamil</p>
+        </div>
+      </aside>
+    </div>
+
+    <section id="download" class="card" style="margin-top:18px">
+      <h2>Download</h2>
+      <p class="muted">Click to download a printable version of this resume (PDF):</p>
+      <a class="btn btn-primary" href="/RanjulaM_resume.pdf" download>Download Resume (PDF)</a>
+    </section>
+
+    <footer>
+      Built with care • Available for internships and project collaborations.
+    </footer>
+  </div>
+
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', e=>{
+        e.preventDefault();
+        const t = document.querySelector(a.getAttribute('href'));
+        if(t) t.scrollIntoView({behavior:'smooth',block:'start'});
+      })
+    })
+  </script>
+</body>
+</html>
